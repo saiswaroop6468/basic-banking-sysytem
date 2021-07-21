@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	background-color: #32312f;
+	font-family: sans-serif;
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.nav{
+	width: 100%;
+	padding: 30px 0px;
+	z-index: 999;
+	font-family: 'sans-serif';
+	background-color: transparent;
+	transition: all 0.3s ease;
+}
+.nav .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav .logo a{
+	font-size: 35px;
+	font-weight: 600;
+	color: #fff;
+}
+.nav .logo a span{
+	color: crimson;
+	transition: all 0.3s ease;
+}
+.nav .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.nav .menu li a{
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+.nav .menu li a:hover{
+	color: crimson;
+    background-color: transparent;
+}
+.nav .menu .hom {
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	color: crimson;
+}
+.menu-btn{
+	color: #fff;
+	font-size: 23px;
+	cursor: pointer;
+	display: none;
+}
+.main{
+    padding: 0 30%;
+    margin: 40px auto 0;
+}
+.main h1{
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+.main form{
+    text-align: center;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td button{
+    width: 130px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: crimson;
+    font-weight: medium;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+}
+.table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+}
+.table{
+    text-align: center;
+}
+.table tbody tr td{
+        text-align: right;
+        position: relative;
+}
+.table tbody tr td select,.table tbody tr td input{
+    width: 150px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 550;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+.table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+}
+::placeholder{
+    color: #fff;
+}
+.table-container{
+	padding: 0 10%;
+    margin: 40px auto 0;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+.table1{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table1 thead{
+    background-color: #ee2828;
+}
+.table1 thead tr th{
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 0.35px;
+    color: #fff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+.table1 tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+.table1 tbody tr td a{
+    width: 130px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: crimson;
+    font-weight: medium;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}
+@media(max-width: 786px) {
+    .table td::before{
+        display: none;
+}
+}

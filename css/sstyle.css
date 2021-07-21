@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("images/background.jpg") no-repeat center;
+    background-size: cover;
+}
+form{
+    margin-top: 15px;
+    text-align: center;
+}
+form .texts{
+    z-index: 999;
+    font-size: 40px;
+	margin: 5px 0;
+    color: crimson;
+	font-weight: 500;
+}
+input{
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 550;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+button{
+    width: 350px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    border: solid 2px crimson;
+    color: #fff;
+    background-color: crimson;
+    border-radius: 6px;
+    transition: all ease 0.3s;
+}
+button:hover{
+    color: crimson;
+    background-color: transparent;
+}
+::placeholder{
+    color: #fff;
+}
